@@ -40,3 +40,30 @@ img:hover {
 	cursor: pointer;
 	background-color: rgb(22, 22, 22);
 }
+
+.projects {
+	text-align: center;
+}
+
+.projects ul {
+	padding: 1rem;
+}
+
+.projects li {
+	list-style: none;
+}
+
+.projects h2 {
+	color: white;
+	font-size: 2rem;
+}
+
+.projects a {
+	text-decoration: none;
+	color: rgba(125, 229, 115, 1);
+	font-size: 1.8rem;
+}
+
+.projects a:hover {
+	color: rgba(219, 115, 229, 0.8);
+}
