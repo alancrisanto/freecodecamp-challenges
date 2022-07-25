@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS Normalize -->
+		<link rel="stylesheet" href="/tec_doc_page/css/normalize.css" />
+		<!-- styles -->
+		<link rel="stylesheet" href="/tec_doc_page/css/styles.css" />
+		<title>Documentation Page</title>
+	</head>
+	<body>
+		<nav>
+			<aside>
+				<header>
+					<h2>JS Documentation</h2>
+				</header>
+				<ul class="nav-list">
+					<li><a href="#introduction">Introduction to CSS Grid</a></li>
+					<li><a href="#basics">Basics and Browser Support</a></li>
+					<li><a href="#terminology">Important Terminology</a></li>
+					<li><a href="#grid-container">Grid Container</a></li>
+					<li><a href="#grid-item">Grid Item</a></li>
+					<li><a href="#grid-line">Grid Line</a></li>
+					<li><a href="#grid-cell">Grid Cell</a></li>
+					<li><a href="#grid-track">Grid Track</a></li>
+					<li><a href="#grid-area">Grid Area</a></li>
+					<li><a href="#display">Grid Display</a></li>
+					<li><a href="#template">Grid Template</a></li>
+					<li><a href="#gap">Grid Gap</a></li>
+				</ul>
+			</aside>
+		</nav>
+		<main class="container">
+			<article class="main-text" id="introduction">
+				<h2>Introduction</h2>
+				<p>
+					CSS Grid Layout (aka “Grid” or “CSS Grid”), is a two-dimensional grid-based layout system that, compared to
+					any web layout system of the past, completely changes the way we design user interfaces. CSS has always been
+					used to layout our web pages, but it's never done a very good job of it. First, we used tables, then floats,
+					positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important
+					functionality (vertical centering, for instance). Flexbox is also a very great layout tool, but its
+					one-directional flow has different use cases — and they actually work together quite well! Grid is the very
+					first CSS module created specifically to solve the layout problems we've all been hacking our way around for
+					as long as we've been making websites.
+				</p>
+			</article>
+			<article class="main-text" id="basics">
+				<h2>Basics and Browser Support</h2>
+				<p>
+					As of March 2017, most browsers shipped native, unprefixed support for CSS Grid: Chrome (including on
+					Android), Firefox, Safari (including on iOS), and Opera. Internet Explorer 10 and 11 on the other hand support
+					it, but it's an old implementation with an outdated syntax. The time to build with grid is now!
+				</p>
+
+				<p>
+					To get started you have to define a container element as a grid with display: grid, set the column and row
+					sizes with grid-template-columns and grid-template-rows, and then place its child elements into the grid with
+					grid-column and grid-row. Similarly to flexbox, the source order of the grid items doesn't matter. Your CSS
+					can place them in any order, which makes it super easy to rearrange your grid with media queries. Imagine
+					defining the layout of your entire page, and then completely rearranging it to accommodate a different screen
+					width all with only a couple lines of CSS. Grid is one of the most powerful CSS modules ever introduced.
+				</p>
+			</article>
+			<article class="main-text" id="terminology">
+				<h2>Important Terminology</h2>
+				<div id="grid-container">
+					<h3> Grid Container </h3>
+					<p>
+						The element on which display: grid is applied. It's the direct parent of all the grid items. In this example
+						container is the grid container.
+					</p>
+					<img src="/tec_doc_page/assets/images/grid-1.png" alt="grid-example" />
+				</div>
+				<div id="grid-item">
+					<h3 id="grid-item">Grid Item</h3>
+					<p>
+						The children (i.e. direct descendants) of the grid container. Here the item elements are grid items, but
+						sub-item isn't.
+					</p>
+					<img src="/tec_doc_page/assets/images/grid-2.png" alt="grid-example" />
+				</div>
+				<div id="grid-line">
+					<h3>Grid Line</h3>
+					<p>
+						The dividing lines that make up the structure of the grid. They can be either vertical (“column grid lines”)
+						or horizontal (“row grid lines”) and reside on either side of a row or column. Here the yellow line is an
+						example of a column grid line.
+					</p>
+					<img src="/tec_doc_page/assets/images/grid-line.svg" alt="grid-example" />
+				</div>
+				<div id="grid-cell">
+					<h3>Grid Cell</h3>
+					<p>
+						The space between two adjacent row and two adjacent column grid lines. It's a single “unit” of the grid.
+						Here's the grid cell between row grid lines 1 and 2, and column grid lines 2 and 3.
+					</p>
+					<img src="/tec_doc_page/assets/images/grid-cell.svg" alt="grid-example" />
+				</div>
+
+				<div id="grid-track">
+					<h3>Grid Track</h3>
+					<p>
+						The space between two adjacent grid lines. You can think of them as the columns or rows of the grid. Here's
+						the grid track between the second and third-row grid lines.
+					</p>
+					<img src="/tec_doc_page/assets/images/grid-track.svg" alt="grid-track" />
+				</div>
+
+				<div id="grid-area">
+					<h3>Grid Area </h3>
+					<p>
+						The total space surrounded by four grid lines. A grid area may be composed of any number of grid cells.
+						Here's the grid area between row grid lines 1 and 3, and column grid lines 1 and 3.
+					</p>
+					<img src="/tec_doc_page/assets/images/grid-area.svg" alt="grid-example" />
+				</div>
+			</article>
+
+			<article class="main-text" id="properties">
+				<h2> Grid Properties </h2>
+
+				<div id="display">
+					<h3> Display </h3>
+					<p>
+						Defines the element as a grid container and establishes a new grid formatting context for its contents.
+					</p>
+					<p> Values: </p>
+					<ul>
+						<li><strong>grid</strong> - Generates a block-level grid</li>
+						<li><strong>inline-grid</strong> - Generates an inline-level grid/li> </li>
+					</ul>
+					<img src="/tec_doc_page/assets/images/grid-3.png" alt="grid-example" />
+				</div>
+
+				<div id="template">
+					<h3>grid-template-columns / grid-template-rows</h3>
+					<p>
+						Defines the columns and rows of the grid with a space-separated list of values. The values represent the
+						track size, and the space between them represents the grid line.
+					</p>
+					<ul>
+						<li
+							><strong>&lt;track-size&gt;</strong> - can be a length, a percentage, or a fraction of the free space in
+							the grid (using the fr unit)</li
+						>
+						<li><strong>&lt;line-name&gt;</strong> - an arbitrary name of your choosing</li>
+					</ul>
+					<img src="/tec_doc_page/assets/images/grid-4.png" alt="grid-example" />
+				</div>
+				<div id="gap">
+					<h3>column-gap /row-gap</h3>
+					<p>
+						Specifies the size of the grid lines. You can think of it like setting the width of the gutters between the
+						columns/rows.
+					</p>
+					<p>Values:</p>
+
+					<ul>
+						<li><strong>&lt;line-size&gt;</strong> - a length value</li>
+					</ul>
+					<img src="/tec_doc_page/assets/images/grid-5.png" alt="grid-example" />
+				</div>
+			</article>
+		</main>
+	</body>
+</html>
