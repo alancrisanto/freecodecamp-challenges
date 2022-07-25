@@ -1,6 +1,8 @@
 body {
-	display: grid;
-	grid-template-columns: 20% 80%;
+	display: flex;
+	/* grid-template-columns: 20% 80%; */
+	/* flex-direction: row; */
+	justify-content: space-between;
 }
 
 img {
@@ -10,8 +12,8 @@ img {
 nav {
 	border-right: 1px solid rgb(26, 26, 29);
 	position: fixed;
-	min-width: 230px;
-	height: 100vh;
+	max-width: 230px;
+	height: 100%;
 }
 
 p {
@@ -41,12 +43,13 @@ header {
 	text-decoration: none;
 	color: rgba(3, 47, 244, 1);
 	padding-left: 0.5rem;
+	text-align: left;
 }
 
 .container {
 	padding: 1rem;
 	margin: 0 1.5rem;
-	grid-column: 2/3;
+	margin-left: 250px;
 }
 
 #introduction h2 {
