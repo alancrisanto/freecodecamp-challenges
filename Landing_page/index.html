@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./assets/styles/styles.css" />
+		<title>Landing Page</title>
+	</head>
+	<body>
+		<header id="header">
+			<div class="nav_container">
+				<img
+					id="header-img"
+					src="https://res.cloudinary.com/deueg7n72/image/upload/v1652059998/FreeCodeCamp/AudiophiliaLogo_evncbt.png"
+				/>
+				<nav id="nav-bar">
+					<ul>
+						<li><a class="nav-link" href="#products">Products</a></li>
+						<li><a class="nav-link" href="#video-section">Video</a></li>
+						<li><a class="nav-link" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<section class="section_header">
+				<div class="container_header">
+					<div class="info_header">
+						<h3>New Product</h3>
+						<h1
+							>XX99 MARK II <br />
+							HEADPHONES
+						</h1>
+						<p
+							>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse est maxime dolor, tenetur veritatis
+							quas!</p
+						>
+					</div>
+					<form id="form" action=" https://www.freecodecamp.com/email-submit">
+						<input id="email" type="email" name="email" placeholder="Enter you email to recieve offers" />
+						<input class="submitBtn" type="submit" id="submit" name="submit" value="Submit" />
+					</form>
+				</div>
+			</section>
+		</header>
+		<section id="products" class="card">
+			<div class="card_container">
+				<div class="card_detail">
+					<img
+						src="https://res.cloudinary.com/deueg7n72/image/upload/v1652056920/FreeCodeCamp/headphones_2_k7quum.png"
+						alt=""
+					/>
+					<div class="card_text">
+						<p>Headphones</p>
+						<p>$35</p>
+						<button>Add to Card</button>
+					</div>
+				</div>
+				<div class="card_detail">
+					<img
+						src="https://res.cloudinary.com/deueg7n72/image/upload/v1652056920/FreeCodeCamp/speaker_1_amwdit.png"
+						alt=""
+					/>
+					<div class="card_text">
+						<p>Speaker</p>
+						<p>$90</p>
+						<button>Add to Card</button>
+					</div>
+				</div>
+				<div class="card_detail">
+					<img
+						src="https://res.cloudinary.com/deueg7n72/image/upload/v1652056920/FreeCodeCamp/earphone_a1tglp.jpg"
+						alt=""
+					/>
+					<div class="card_text">
+						<p>Earphones</p>
+						<p>$15</p>
+						<button>Add to Card</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="video-section" class="video">
+			<div class="video_container">
+				<iframe
+					id="video"
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/CB2KCBVCGu8"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+		</section>
+		<footer id="contact">
+			<div class="contact_info">
+				<h3> Audiophilia </h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae est sequi nemo voluptate quos hic. At
+					distinctio eligendi saepe incidunt dolore vitae iste, recusandae necessitatibus, optio doloremque alias
+					mollitia consequatur?
+				</p>
+			</div>
+			<div class="contact_social">
+				<div class="contact_icons">
+					<i class="fa-brands fa-facebook"></i>
+					<i class="fa-brands fa-youtube"></i>
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+				<span><span>Copyright 2016, Original acrisvall</span></span>
+			</div>
+		</footer>
+	</body>
+</html>
