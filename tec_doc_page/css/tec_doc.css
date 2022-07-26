@@ -85,3 +85,20 @@ header {
 .credits a:hover {
 	color: rgba(248, 113, 138, 1);
 }
+
+@media screen and (max-width: 760px) {
+	body {
+		display: block;
+	}
+
+	nav {
+		position: inherit;
+		min-width: 100%;
+		height: auto;
+		border-right: none;
+	}
+
+	.container {
+		margin-left: 1rem;
+	}
+}
