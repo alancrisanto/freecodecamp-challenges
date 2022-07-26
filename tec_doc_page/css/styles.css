@@ -69,3 +69,19 @@ header {
 #gap img {
 	height: 230px;
 }
+
+.credits {
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+.credits a {
+	text-decoration: none;
+	color: rgba(3, 47, 244, 1);
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+
+.credits a:hover {
+	color: rgba(248, 113, 138, 1);
+}
