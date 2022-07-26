@@ -51,6 +51,7 @@ img:hover {
 
 .projects li {
 	list-style: none;
+	margin: 0.8rem;
 }
 
 .projects h2 {
