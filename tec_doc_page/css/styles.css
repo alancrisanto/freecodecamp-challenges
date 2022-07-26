@@ -1,7 +1,5 @@
 body {
 	display: flex;
-	/* grid-template-columns: 20% 80%; */
-	/* flex-direction: row; */
 	justify-content: space-between;
 }
 
